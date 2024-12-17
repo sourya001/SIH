@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Village Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select your village</h1>
+    <select id="villageSelect" onchange="updateTable()">
+      <option value="village1">Village 1</option>
+      <option value="village2">Village 2</option>
+      <option value="village3">Village 3</option>
+    </select>
+
+    <table id="villageData">
+      <tr><th>Factor</th><th>Value</th></tr>
+      <tr><td>Environmental Factors</td><td id="envFactor">-</td></tr>
+      <tr><td>Pollution</td><td id="pollution">-</td></tr>
+      <tr><td>Tax</td><td id="tax">-</td></tr>
+      <tr><td>Health</td><td id="health">-</td></tr>
+      <tr><td>Literacy</td><td id="literacy">-</td></tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
